@@ -2,47 +2,33 @@
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont[Mapping=tex-text]{Gill Sans}
-\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry}
+\usepackage[hmargin=1.25cm, vmargin=1.0cm]{geometry}
+\pagestyle{empty}
+\newcommand{\bodyText}{\small}
 \begin{document}
-\sffamily{Moycullen Set}
+\sffamily
 
 
 
 \begin{minipage}[t]{0.45\textwidth}
 \vspace{0pt}
-%%\section*{Figure 1: Reel (160 Bars)}
-Figure 1: Reel (160 Bars)\\
-
-
-All lead around (8 bars)\\
-All house around (8 bars)\\
-tops chain ; all swing (16 bars)\\
-side chain; all swing (16 bars)\\
-tops Advance \& Retire; \\
-then dance to side couple \& on the spot (8 bars)\\
-Dance a broken square\\
-with top ladies to opposite  (8 bars)\\
-Tops repeat from A \& R with opposites (16 bars)\\
-Sides Lead \\
-Sides Advance \& Retire; \\
-then dance to side couple \& on the spot (8 bars)\\
-All couples house to finsh (8 bars)\\
-
-
-Figure 2: Reel (160 Bars)\\
-
-All lead around (8 bars)\\
-All house around (8 bars)\\
-Tops: adavance\& Retire and into line\\
-Dance around opposite w/ right hands
-Turn around partners\\
+\input{panel1}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
 \vspace{0pt}
-
-
-the quick brown fox jumped over the fence.
+\input{panel2}
 \end{minipage}
+\begin{minipage}[b]{0.45\textwidth}
+\vspace{0pt}
+\input{panel2}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+\vspace{0pt}
+\input{panel1}
+\end{minipage}
+
 \end{document}
 
