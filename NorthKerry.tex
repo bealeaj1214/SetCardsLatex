@@ -1,0 +1,37 @@
+\documentclass[10pt]{article}
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Gill Sans}
+\usepackage[hmargin=1.25cm, vmargin=1.0cm]{geometry}
+\pagestyle{empty}
+\newcommand{\bodyText}{\small}
+
+\newcommand{\fourPanel}[1]
+{
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
+\input{#11}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
+\input{#12}
+\end{minipage}
+\vfill
+\begin{minipage}[b]{0.45\textwidth}
+\vspace{0pt}
+\input{#12}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+\vspace{0pt}
+\input{#11}
+\end{minipage}
+}
+
+\begin{document}
+\sffamily
+
+\fourPanel{northKerry}
+\end{document}
