@@ -33,3 +33,4 @@ MoycullenSet.pdf :: MoycullenSet.tex generated tex/panel1.tex tex/panel2.tex
 NorthKerry.pdf :: NorthKerry.tex generated tex/northKerry1.tex tex/northKerry2.tex
 
 all:: MoycullenSet.pdf
+all :: NorthKerry.pdf
